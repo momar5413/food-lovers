@@ -1,280 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="no-js">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>food lover</title>
-    <link rel="stylesheet" href="./style/style.css">
+    <meta name="description" content="Food Lover — a fine dining restaurant in Bosra Al-Sham, Daraa. Seasonal dishes, signature pasta and an unforgettable table.">
+    <meta name="theme-color" content="#0e0d0b">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Food Lover | Fine Dining Restaurant">
+    <meta property="og:description" content="Seasonal dishes, signature pasta and an unforgettable table in Bosra Al-Sham, Daraa.">
+    <meta property="og:image" content="https://momar5413.github.io/food-lovers/img/home.jpg">
+    <title>Food Lover | Fine Dining Restaurant</title>
+    <link rel="icon" href="./img/logo.jpg" type="image/jpeg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 
 <body>
-    <header>
+    <header id="home">
         <div id="navbar">
-            <img src="./img/logo.jpg" alt="food lover logo">
-            <nav>
+            <a href="#home" class="logo" aria-label="Food Lover home">
+                <img src="./img/logo.jpg" alt="Food Lover logo">
+                <span>Food <em>Lover</em></span>
+            </a>
+            <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="main-nav">
+                <span></span><span></span><span></span>
+            </button>
+            <nav id="main-nav">
                 <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about">about</a></li>
-                    <li><a href="#menu">menu</a></li>
-                    <li><a href="#gallery">gallery</a></li>
-                    <li><a href="#contact">contact</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li class="nav-cta"><a href="#contact" class="btn btn-outline">Reserve</a></li>
                 </ul>
             </nav>
         </div>
         <div class="content">
-            <h1>welcome to <span class="primary-text">food lover</span> restaurant </h1>
-            <p>here you can found most delicacies food in the world</p>
-            <a href="#" class="btn btn-primary">book a Table</a>
+            <p class="eyebrow">Fine Dining &middot; Since 2000</p>
+            <h1>Welcome to <span class="primary-text">Food Lover</span></h1>
+            <p class="lead">An intimate table where the finest ingredients from around the world meet the warmth of
+                home cooking.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary">Book a Table</a>
+                <a href="#menu" class="btn btn-outline">View Menu</a>
+            </div>
         </div>
+        <a href="#about" class="scroll-down" aria-label="Scroll to about section"><span></span></a>
     </header>
+
     <main>
         <section id="about">
             <div class="container">
-                <div class="title">
-                    <h2>the food lover history</h2>
-                    <p>more then 25+ years of experiance</p>
+                <div class="title reveal">
+                    <p class="eyebrow">Our Story</p>
+                    <h2>The Food Lover History</h2>
+                    <p>More than 25 years of experience</p>
                 </div>
                 <div class="about-content">
-                    <div>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet adipisci eum cum recusandae
-                            tempore magni earum ipsum eius! Fugiat nesciunt dolor odio laboriosam ea aperiam at
-                            blanditiis veritatis ab? Est.</p>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti aliquam veritatis numquam
-                            harum in amet assumenda modi saepe quae eum nam, impedit beatae optio odio vitae quis
-                            sapiente dolore unde.</p>
-                        <a href="#" class="btn btn-secondary">LEARN MORE</a>
+                    <div class="about-text reveal">
+                        <p>Food Lover began as a small family kitchen in the heart of Bosra Al-Sham, built on one simple
+                            belief: great food brings people together. For more than two decades we have welcomed
+                            guests to our table with generous plates and genuine hospitality.</p>
+                        <p>Today our chefs blend time-honoured recipes with modern technique, sourcing the freshest
+                            local produce every morning so that each dish tells a story of flavour, craft and care.</p>
+                        <div class="stats">
+                            <div><strong>25+</strong><span>Years</span></div>
+                            <div><strong>40+</strong><span>Signature dishes</span></div>
+                            <div><strong>12k</strong><span>Happy guests</span></div>
+                        </div>
+                        <a href="#menu" class="btn btn-primary">Discover Our Menu</a>
                     </div>
-                    <img src="./img/about.jpg" alt="">
+                    <div class="about-img reveal">
+                        <img src="./img/about.jpg" alt="Collage of the Food Lover dining room and dishes" loading="lazy">
+                    </div>
                 </div>
             </div>
         </section>
+
         <section id="offers">
             <div class="container">
-                <div class="title">
-                    <h2>our special offers</h2>
-                    <p>more then 25+ years of experiance</p>
+                <div class="title reveal">
+                    <p class="eyebrow">Limited Time</p>
+                    <h2>Our Special Offers</h2>
+                    <p>Handmade pasta, prepared fresh every day</p>
                 </div>
-                <div class="offers-itmes">
-                    <div>
-                        <img src="./img/pasta.jpg" alt="gluten free pasta">
-                        <div>
-                            <h3>gluten free pasta</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, obcaecati.</p>
-                            <p><del>$55</del><span class="primary-text">$18</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./img/pasta2.jpg" alt="quattro pasta">
-                        <div>
-                            <h3> Quattro pasta </h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, obcaecati.</p>
-                            <p><del>$55</del><span class="primary-text">$18</span></p>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./img/pasta3.jpg" alt="vegetarian pasta">
-                        <div>
-                            <h3>vegetarian pasta</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta, obcaecati.</p>
-                            <p><del>$55</del><span class="primary-text">$18</span></p>
-                        </div>
-                    </div>
-
+                <div class="offers-items">
+                    <article class="offer-card reveal">
+                        <img src="./img/pasta.jpg" alt="Gluten free spaghetti with tomato and feta" loading="lazy">
+                        <h3>Gluten Free Pasta</h3>
+                        <p>Spaghetti in slow-cooked tomato sauce with creamy feta and fresh basil.</p>
+                        <p class="price"><del>$25</del><span class="primary-text">$18</span></p>
+                    </article>
+                    <article class="offer-card reveal">
+                        <img src="./img/pasta2.jpg" alt="Quattro penne pasta with cherry tomatoes" loading="lazy">
+                        <h3>Quattro Pasta</h3>
+                        <p>Penne tossed with four cheeses, roasted cherry tomatoes and parsley.</p>
+                        <p class="price"><del>$25</del><span class="primary-text">$18</span></p>
+                    </article>
+                    <article class="offer-card reveal">
+                        <img src="./img/pasta3.jpg" alt="Vegetarian fusilli pasta salad" loading="lazy">
+                        <h3>Vegetarian Pasta</h3>
+                        <p>Fusilli with broccoli, olives, tomatoes and cubes of white cheese.</p>
+                        <p class="price"><del>$25</del><span class="primary-text">$18</span></p>
+                    </article>
                 </div>
             </div>
         </section>
+
         <section id="menu">
             <div class="container">
-                <div class="title">
-                    <h2>our special menu</h2>
-                    <p>order tow and get third for free</p>
+                <div class="title reveal">
+                    <p class="eyebrow">À la Carte</p>
+                    <h2>Our Special Menu</h2>
+                    <p>Order two and get the third for free</p>
                 </div>
-                <div class="menu-itmes">
-                    <div class="menu-itmes-left">
-                        <div class="menu-itme">
-                            <img src="./img/food1.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$15</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
-                        </div>
-                        <div class="menu-itme">
-                            <img src="./img/food2.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$15</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
-                        </div>
-                        <div class="menu-itme">
-                            <img src="./img/food3.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$18</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
-                        </div>
-                        <div class="menu-itme">
-                            <img src="./img/food4.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$18</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
-                        </div>
-                        <div class="menu-itme">
-                            <img src="./img/food5.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$18</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
-                        </div>
-                        <div class="menu-itme">
-                            <img src="./img/food6.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$18</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
+                <div class="menu-items">
+                    <div class="menu-item reveal">
+                        <img src="./img/food1.jpg" alt="Garden egg salad" loading="lazy">
+                        <div>
+                            <h3><span>Garden Egg Salad</span><span class="dots"></span><span class="primary-text">$15</span></h3>
+                            <p>Soft-boiled eggs, baby spinach and herbs with a light lemon dressing.</p>
                         </div>
                     </div>
-                    <div class="menu-itmes-right">
-                        <div class="menu-itme">
-                            <img src="./img/food7.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$18</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/food7.jpg" alt="Beetroot elixir" loading="lazy">
+                        <div>
+                            <h3><span>Beetroot Elixir</span><span class="dots"></span><span class="primary-text">$9</span></h3>
+                            <p>Cold-pressed beetroot, apple and fresh mint served over ice.</p>
                         </div>
-                        <div class="menu-itme">
-                            <img src="./img/food8.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$18</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/food2.jpg" alt="Chargrilled veal chop" loading="lazy">
+                        <div>
+                            <h3><span>Chargrilled Veal Chop</span><span class="dots"></span><span class="primary-text">$28</span></h3>
+                            <p>Crispy herbed potatoes, grilled greens and a peppercorn butter.</p>
                         </div>
-                        <div class="menu-itme">
-                            <img src="./img/food9.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$18</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/food8.jpg" alt="Rosemary lamb chops" loading="lazy">
+                        <div>
+                            <h3><span>Rosemary Lamb Chops</span><span class="dots"></span><span class="primary-text">$26</span></h3>
+                            <p>Pan-seared lamb with roasted garlic, rosemary and sea salt.</p>
                         </div>
-                        <div class="menu-itme">
-                            <img src="./img/food10.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$18</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/food3.jpg" alt="Wood-fired pizza" loading="lazy">
+                        <div>
+                            <h3><span>Wood-Fired Pizza</span><span class="dots"></span><span class="primary-text">$18</span></h3>
+                            <p>Hand-stretched dough, spicy sausage, mozzarella and oregano.</p>
                         </div>
-                        <div class="menu-itme">
-                            <img src="./img/food11.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$18</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/food9.jpg" alt="Brioche French toast" loading="lazy">
+                        <div>
+                            <h3><span>Brioche French Toast</span><span class="dots"></span><span class="primary-text">$14</span></h3>
+                            <p>Caramelised brioche with banana, blueberries and maple syrup.</p>
                         </div>
-                        <div class="menu-itme">
-                            <img src="./img/food12.jpg" alt="">
-                            <div>
-                                <h3>Lorem, ipsum dolor. <span class="primary-text">$18</span></h3>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium, itaque nihil
-                                    necessitatibus </p>
-                            </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/food4.jpg" alt="Pizza verde" loading="lazy">
+                        <div>
+                            <h3><span>Pizza Verde</span><span class="dots"></span><span class="primary-text">$17</span></h3>
+                            <p>Thin crust topped with rocket, cherry tomatoes and parmesan.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/food10.jpg" alt="Mixed grill skewers" loading="lazy">
+                        <div>
+                            <h3><span>Mixed Grill Skewers</span><span class="dots"></span><span class="primary-text">$24</span></h3>
+                            <p>Chicken and beef skewers with roasted peppers and house sauces.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/food5.jpg" alt="Rainbow buddha bowl" loading="lazy">
+                        <div>
+                            <h3><span>Rainbow Buddha Bowl</span><span class="dots"></span><span class="primary-text">$16</span></h3>
+                            <p>Avocado, chickpeas, sweet potato and crisp greens with tahini.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/tofu-bowl.jpg" alt="Spiced tofu bowl" loading="lazy">
+                        <div>
+                            <h3><span>Spiced Tofu Bowl</span><span class="dots"></span><span class="primary-text">$16</span></h3>
+                            <p>Crispy chilli tofu, sweet corn, edamame and quail eggs.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/food6.jpg" alt="Seared salmon" loading="lazy">
+                        <div>
+                            <h3><span>Seared Salmon</span><span class="dots"></span><span class="primary-text">$27</span></h3>
+                            <p>Crispy-skin salmon on a balsamic reduction with garden vegetables.</p>
+                        </div>
+                    </div>
+                    <div class="menu-item reveal">
+                        <img src="./img/food12.jpg" alt="Kofta meatballs" loading="lazy">
+                        <div>
+                            <h3><span>Kofta Meatballs</span><span class="dots"></span><span class="primary-text">$19</span></h3>
+                            <p>Charcoal-grilled spiced beef kofta on a bed of fresh lettuce.</p>
                         </div>
                     </div>
                 </div>
-                <button class="btn">explore full menu</button>
+                <div class="center">
+                    <a href="#contact" class="btn btn-primary">Reserve Your Table</a>
+                </div>
             </div>
         </section>
+
         <section id="daytime">
             <div class="container">
-                <div class="daytime-itmes">
-                    <div class="daytime-itme">
-                        <img src="./img/breacfast.jpg" alt="">
-                        <h3>breackfast</h3>
-                        <p>8:00 AM To 10:00 AM </p>
+                <div class="daytime-items">
+                    <div class="daytime-item reveal">
+                        <i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+                        <h3>Breakfast</h3>
+                        <p>8:00 AM &ndash; 10:00 AM</p>
                     </div>
-                    <div class="daytime-itme">
-                        <img src="./img/lunch.jpg" alt="">
-                        <h3>lunch</h3>
-                        <p>3:00 PM To 7:00 PM </p>
+                    <div class="daytime-item reveal">
+                        <i class="fa-solid fa-bowl-food" aria-hidden="true"></i>
+                        <h3>Lunch</h3>
+                        <p>3:00 PM &ndash; 7:00 PM</p>
                     </div>
-                    <div class="daytime-itme">
-                        <img src="./img/dinner.jpg" alt="">
-                        <h3>dinner</h3>
-                        <p>9:00 PM To 12:00 AM </p>
+                    <div class="daytime-item reveal">
+                        <i class="fa-solid fa-utensils" aria-hidden="true"></i>
+                        <h3>Dinner</h3>
+                        <p>9:00 PM &ndash; 12:00 AM</p>
                     </div>
-                    <div class="daytime-itme">
-                        <img src="./img/dessert.jpg" alt="">
-                        <h3>dessert</h3>
-                        <p>ALL DAY</p>
+                    <div class="daytime-item reveal">
+                        <i class="fa-solid fa-ice-cream" aria-hidden="true"></i>
+                        <h3>Dessert</h3>
+                        <p>All Day</p>
                     </div>
-
                 </div>
             </div>
         </section>
+
         <section id="gallery">
             <div class="container">
-                <h2>our food gallery</h2>
+                <div class="title reveal">
+                    <p class="eyebrow">Moments</p>
+                    <h2>Our Food Gallery</h2>
+                    <p>A taste of what awaits you</p>
+                </div>
                 <div class="img-gallery">
-                    <img src="./img/gall1.jpg" alt="">
-                    <img src="./img/gall2.jpg" alt="">
-                    <img src="./img/gall3.jpg" alt="">
-                    <img src="./img/gall4.jpg" alt="">
-                    <img src="./img/gall5.jpg" alt="">
-                    <img src="./img/gall6.jpg" alt="">
+                    <figure class="reveal"><img src="./img/gall2.jpg" alt="Our chef plating a dish" loading="lazy"></figure>
+                    <figure class="reveal"><img src="./img/gall4.jpg" alt="Fresh salad with orange juice" loading="lazy"></figure>
+                    <figure class="reveal"><img src="./img/gall6.jpg" alt="Pancake stack drizzled with honey" loading="lazy"></figure>
+                    <figure class="reveal"><img src="./img/food10.jpg" alt="Grilled skewers with dipping sauces" loading="lazy"></figure>
+                    <figure class="reveal"><img src="./img/tofu-bowl.jpg" alt="Colourful tofu bowl" loading="lazy"></figure>
+                    <figure class="reveal"><img src="./img/home.jpg" alt="Freshly baked pizza with cherry tomatoes" loading="lazy"></figure>
                 </div>
             </div>
         </section>
+
         <section id="contact">
             <div class="container">
+                <div class="title reveal">
+                    <p class="eyebrow">Get in Touch</p>
+                    <h2>Reserve &amp; Contact</h2>
+                    <p>We would love to host you</p>
+                </div>
                 <div class="contact-content">
-                    <div class="contact-info">
+                    <div class="contact-info reveal">
                         <div>
-                            <h3>ADDRESS</h3>
-                            <P><i class="fa-solid fa-location-dot"></i>BOSRA ALSHAM ,DARAA</P>
-                            <P><i class="fa-solid fa-phone"></i>PHONE:0930803782</P>
-                            <P><i class="fa-regular fa-envelope"></i>EMAIL:MOHAMMEDOMAR2003@GMAIL.COM</P>
-
+                            <h3>Address</h3>
+                            <p><i class="fa-solid fa-location-dot" aria-hidden="true"></i>Bosra Al-Sham, Daraa</p>
+                            <p><i class="fa-solid fa-phone" aria-hidden="true"></i><a href="tel:0930803782">0930 803 782</a></p>
+                            <p><i class="fa-regular fa-envelope" aria-hidden="true"></i><a
+                                    href="mailto:mohammedomar2003@gmail.com">mohammedomar2003@gmail.com</a></p>
                         </div>
                         <div>
-                            <h3>working hours</h3>
-                            <p>8:00 AM To 12:00 AM On Weekdays</p>
-                            <p>8:00 AM To 2:00 AM On WeekEnds</p>
+                            <h3>Working Hours</h3>
+                            <p>Weekdays: 8:00 AM &ndash; 12:00 AM</p>
+                            <p>Weekends: 8:00 AM &ndash; 2:00 AM</p>
                         </div>
                         <div>
-                            <h3>FOLLOW US</h3>
-                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <h3>Follow Us</h3>
+                            <div class="socials">
+                                <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                                <a href="#" aria-label="X (Twitter)"><i class="fa-brands fa-x-twitter"></i></a>
+                                <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
-                    <form>
-                        <input type="text" name="name" id="Name" placeholder="Full Name" required>
-                        <input type="email" name="email" id="email" placeholder="email address" required>
-                        <input type="text" name="subject" id="subject" placeholder="subject" required>
-                        <textarea name="message" id="message" cols="30" rows="5" placeholder="message"></textarea>
-                        <button type="submit" class="btn">SEND MESSAGE</button>
+                    <form class="contact-form reveal" id="contact-form">
+                        <label class="sr-only" for="name">Full name</label>
+                        <input type="text" name="name" id="name" placeholder="Full Name" autocomplete="name" required>
+                        <label class="sr-only" for="email">Email address</label>
+                        <input type="email" name="email" id="email" placeholder="Email Address" autocomplete="email" required>
+                        <label class="sr-only" for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" placeholder="Subject" required>
+                        <label class="sr-only" for="message">Message</label>
+                        <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-status" role="status" aria-live="polite"></p>
                     </form>
                 </div>
             </div>
         </section>
     </main>
+
     <footer id="footer">
-        <p>copyrigh &copy; 2025 all rights reserved | Made BY MOHAMMED OMAR</p>
+        <img src="./img/logo.jpg" alt="Food Lover logo" loading="lazy">
+        <p>Copyright &copy; <span id="year">2025</span> Food Lover. All rights reserved &middot; Made by Mohammed Omar</p>
     </footer>
+
+    <a href="#home" class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></a>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
